@@ -1,6 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    background-position-x: center;
+}
+
+
 header {
-    background-color: #333;
+    background-color: #5233eb;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #2724f9;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #00a3ff;
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container-kontak {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero button {
+    background-color: #fff;
+    color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #f4f4f4;
 }
