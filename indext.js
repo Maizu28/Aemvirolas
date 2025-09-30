@@ -1,21 +1,21 @@
 let progress = 0;
 const loadingBar = document.getElementById('loadingBar');
-const loadingTexxt = document.getElementById('loadingText');
-const completeButton = document.getElementById('completeButton');
+const loadingText = document.getElementById('loadingText');
+const completedButton = document.getElementById('completedButton');
 
 function updateProgress() {
-    if (progress <100) {
-        progress +=1;
-        loadingBar.style.width = progress = '%';
-        loadingText.textContent = progress = '%';
+    if (progress < 100) {
+        progress += 1;
+        loadingBar.style.width = progress + '%';
+        loadingText.textContent = progress + '%';
         setTimeout(updateProgress, 50);
     } else {
-        loadingText.style.display = 'none';
-        completeButton.style.display = 'block';
+        loadingText.style.display = 'none';  // Sembunyikan teks progress
+        completedButton.style.display = 'block';  // Tampilkan tombol "Masuk"
     }
 }
 
-completeButton.addEventListener('click', () => {
+completedButton.addEventListener('click', () => {
     window.location.href = 'Home/home.html';
 });
 
